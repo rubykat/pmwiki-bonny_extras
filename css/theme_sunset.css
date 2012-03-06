@@ -1,0 +1,84 @@
+/* Theme for Bonny: sunset */
+#wikihead,
+#wikifoot {
+	background: transparent;
+	background: #e99064 url(../images/sunset2.jpg);
+	border-color: #550000;
+}
+
+body,
+body.snug #wikititle,
+body.roomy #wikititle,
+#wikitext {
+	color: #330000;
+	background: #f2baaa;
+}
+
+#wikileft, #wikiright {
+	color: #330000;
+	background: #da8477;
+}
+body.snug #wikimid,
+body.roomy #wikimid {
+	border-color: #da8477;
+}
+
+body.roomy {
+	color: #330000;
+	background: #7b2f36 url(../images/sunset3a.jpg);
+}
+
+/*------------------------------------------------*/
+/* links etc */
+a:link {
+	color: #990000;
+	background: transparent;
+}
+a:visited {
+	color: #7b5200;
+	background: transparent;
+}
+.sidebar .indent ul, .sidebar ul ul,
+.sidebar dl ul {
+        list-style-image: url(../images/bent_arrow.png);   
+}
+#menubar a, #menubar b {
+	border-color: #550000;
+	background: #da8477;
+}
+#menubar li {
+	border-color: #a75144;
+}
+#menubar b.selflink,
+#menubar .current a {
+	background: #f2baaa;
+	color: #7b5200;
+}
+.wikicmds a, div.wikicmds b.selflink {
+	border-color: #550000;
+}
+.wikicmds .loginhover {
+	background: transparent;
+	color: white;
+}
+.wikicmds .login a {
+	border: none;
+	background: transparent;
+	color: #ff9999;
+}
+.wikicmds .login a:hover {
+	border: white 2px solid;
+	color: #ff9999;
+	background: #550000;
+}
+#breadcrumb b.selflink,
+#wikileft b.selflink,
+#wikiright b.selflink,
+#wikibody b.selflink {
+	color: #550000;
+}
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1, h2, h3, h4 {
+	font-family: merlin, hancock, black, barcool, "lucida calligraphy", Merced, sans-serif;
+}

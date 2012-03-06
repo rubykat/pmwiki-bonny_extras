@@ -1,0 +1,93 @@
+/* Theme for Bonny: midblu (midnight blue) */
+#wikihead,
+#wikifoot {
+	color: white;
+	background: #000033;
+	border-color: #ccccff;
+}
+
+body.roomy #wikititle {
+	color: white;
+	background: #000033;
+}
+
+body,
+body.snug #wikititle,
+#wikitext {
+	color: white;
+	background: #000080 url(../images/midnightblue1.jpg) fixed;
+}
+
+#wikileft, #wikiright {
+	color: white;
+	background: #000011;
+}
+
+body.snug #wikibody,
+body.roomy #wikibody,
+body.trio #wikimid {
+	border-color: #000011;
+}
+
+body.roomy {
+	color: black;
+	background: #ccccff url(../images/blue1.jpg) fixed;
+}
+
+/*------------------------------------------------*/
+/* links etc */
+a:link {
+	color: #ccccff;
+	background: transparent;
+}
+a:visited {
+	color: #ff99ff;
+	background: transparent;
+}
+.sidebar .indent ul, .sidebar ul ul,
+.sidebar dl ul {
+        list-style-image: url(../images/bent_arrow2.png);   
+}
+#menubar a, #menubar b {
+	border-color: #000066;
+	background: #000011;
+}
+#menubar li {
+	border-color: navy;
+}
+#menubar b.selflink,
+#menubar .current a {
+	background: navy;
+	color: #ff99ff;
+}
+.wikicmds a {
+	border-color: #000066;
+}
+.wikicmds .loginhover {
+	background: transparent;
+	color: white;
+}
+.wikicmds .login a {
+	border: none;
+	background: transparent;
+	color: #000033;
+}
+.wikicmds .login a:hover {
+	border: navy 2px solid;
+	color: navy;
+	background: #9999ff;
+}
+#breadcrumb b.selflink,
+#wikileft b.selflink,
+#wikiright b.selflink,
+#wikibody b.selflink {
+	color: #eeeeff;
+}
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1, h2, h3, h4 {
+	font-family: Ethnocentric, "Flipside BRK", "Metal Lord", Fantazian, ESP, Scott, Illusion, Slant, verdana, arial, helvetica, sans-serif;
+	font-weight: normal;
+	color: white;
+	background-color: transparent;
+}

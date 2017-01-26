@@ -1,0 +1,96 @@
+/* Theme for Bonny: Ivy */
+@import "functions";
+body {
+	color: white;
+	background: black url(../images/ivy2.jpg) fixed;
+}
+#wikihead, #wikifoot {
+	background: transparent;
+	border-color: #005500;
+}
+#wikileft, #wikibody, #wikiright {
+	background: transparent;
+}
+body.snug #wikimid,
+body.roomy #wikimid {
+	border-color: transparent;
+}
+
+#wikititle,
+#wikitext {
+	color: #eeffee;
+	background: #003300 url(../images/ivy1.jpg) fixed;
+}
+
+/*------------------------------------------------*/
+/* links etc */
+a:link {
+	color: #aaf2aa;
+	background: transparent;
+}
+a:visited {
+	color: #f2cda9;
+	background: transparent;
+}
+a:link:hover {
+	color: black;
+	background: #aaf2aa;
+}
+a:visited:hover {
+	color: #330000;
+	background: #aaf2aa;
+}
+.sidebar .indent ul, .sidebar ul ul,
+.sidebar dl ul {
+        list-style-image: url(../images/bent_arrow2.png);   
+}
+#menubar a, #menubar b {
+	border-color: #005500;
+	background: #113311;
+	color: white;
+}
+#menubar li {
+	border-color: #005500;
+}
+#menubar b.selflink,
+#menubar .current a {
+	background: transparent;
+}
+.wikicmds a, .wikicmds b {
+	border-color: #005500;
+}
+.wikicmds .loginhover {
+	background: transparent;
+	color: black;
+}
+#wikihead .wikicmds .login a,
+#wikifoot .wikicmds .login a
+{
+	border: none;
+	background: transparent;
+	color: #006600;
+}
+#wikihead .wikicmds .login a:hover,
+#wikifoot .wikicmds .login a:hover
+{
+	border: white 2px solid;
+	color: #ccffcc;
+	background: #005500;
+}
+#wikihead b.selflink,
+#wikileft b.selflink,
+#wikiright b.selflink,
+#wikibody b.selflink {
+	color: white;
+}
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1, h2, h3, h4 {
+        font-family:  "Lucida Calligraphy", Merlin, "Black", verdana, helvetica, arial, sans-serif;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+

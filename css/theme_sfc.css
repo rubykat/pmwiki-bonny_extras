@@ -1,112 +1,126 @@
 /* Theme for Bonny: sfc */
 #wikihead,
 #wikifoot {
-	color: white;
-	background: url(../images/dkblue2.jpg) #121257;
-	border-color: #9999ff;
+  color: white;
+  background: url(../images/dkblue2.jpg) #121257;
+  border-color: #9999ff;
 }
 
 body.roomy #wikititle {
-	color: white;
-	background: #121257;
+  color: white;
+  background: #121257;
 }
 
 body,
 body.snug #wikititle,
 #wikitext {
-	color: black;
-	background: white;
+  color: black;
+  background: white;
 }
+
 body.snug #wikibody {
-	background: white url(../images/vine.jpg) repeat-x;
+  background: white url(../images/vine.jpg) repeat-x;
 }
+
 body.snug #wikititle, body.snug #wikitext {
-	background: transparent;
+  background: transparent;
 }
 
 #wikileft, #wikiright {
-	color: black;
-	background: #222299;
+  color: black;
+  background: #222299;
 }
 
 body.snug #wikibody,
 body.roomy #wikibody,
 body.trio #wikimid {
-	border-color: #222299;
+  border-color: #222299;
 }
 
 body.roomy {
-	color: white;
-	background: #66bb66;
+  color: white;
+  background: #66bb66;
 }
 
 /*------------------------------------------------*/
 /* links etc */
 a:link {
-	color: #336633;
-	background: transparent;
+  color: #336633;
+  background: transparent;
 }
+
 a:visited {
-	color: #336699;
-	background: transparent;
+  color: #336699;
+  background: transparent;
 }
+
 #wikileft a:link,
 #wikiright a:link,
 #wikihead a:link,
 #wikifoot a:link {
-	color: #99ff99;
+  color: #99ff99;
 }
+
 #wikileft a:visited,
 #wikiright a:visited,
 #wikihead a:visited,
 #wikifoot a:visited {
-	color: #99ccff;
+  color: #99ccff;
 }
 
 .sidebar .indent ul, .sidebar ul ul,
 .sidebar dl ul {
-        list-style-image: url(../images/bent_arrow2.png);   
+  list-style-image: url(../images/bent_arrow2.png);
 }
+
 #menubar a, #menubar b {
-	border-color: #9999ff;
-	background: #222299;
+  border-color: #9999ff;
+  background: #222299;
 }
+
 #menubar li {
-	border-color: #7777dd;
+  border-color: #7777dd;
 }
+
 #menubar b.selflink,
 #menubar .current a {
-	color: #336633;
-	background: white;
+  color: #336633;
+  background: white;
 }
+
 .wikicmds a {
-	border-color: #9999ff;
+  border-color: #9999ff;
 }
+
 .wikicmds .loginhover {
-	background: transparent;
-	color: white;
+  background: transparent;
+  color: white;
 }
+
 #wikihead .wikicmds .login a,
 #wikifoot .wikicmds .login a {
-	border: none;
-	background: transparent;
-	color: #121257;
+  border: none;
+  background: transparent;
+  color: #121257;
 }
+
 #wikihead .wikicmds .login a:hover,
 #wikifoot .wikicmds .login a:hover {
-	border: white 2px solid;
-	color: #ccccff;
-	background: #121257;
+  border: white 2px solid;
+  color: #ccccff;
+  background: #121257;
 }
+
 #breadcrumb b.selflink,
 #wikileft b.selflink,
 #wikiright b.selflink,
 #wikibody b.selflink {
-	color: #9999ff;
+  color: #9999ff;
 }
+
 /* ------------------------------------------------------------------ */
 /* Fonts */
 h1, h2, h3, h4 {
-	font-family: 'agency fb', agency, creedmore, AvantGarde, helvetica, arial, sans-serif;
-	font-weight: normal;
+  font-family: 'agency fb', agency, creedmore, AvantGarde, helvetica, arial, sans-serif;
+  font-weight: normal;
 }

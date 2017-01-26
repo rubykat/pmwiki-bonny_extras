@@ -1,0 +1,114 @@
+/* Theme for Bonny: gold */
+@import "functions";
+// -------------------------------------------------------------------
+// VARIABLES
+
+$body-bg: #553300;
+$header-bg: #d69d15;
+$header-border: #754c0e;
+$side-bg: #e6c05c;
+$content-bg: #f2e6aa;
+
+$menu-bg: #9999ff;
+$menu-border: #555588;
+
+/*------------------------------------------------*/
+@include bonny-backdrop($body-bg);
+@include bonny-header($header-bg, $header-border, "../images/golden1.jpg");
+@include bonny-side($side-bg, $header-border);
+@include bonny-content($content-bg, $header-border);
+/*
+#wikihead,
+#wikifoot {
+	color: black;
+	background: #d69d15 url(../images/golden1.jpg);
+	border-color: #754c0e;
+}
+
+body.roomy #wikititle {
+	color: black;
+	background: #d69d15;
+}
+
+body,
+body.snug #wikititle,
+#wikitext {
+	color: #111100;
+	background: #f2e6aa;
+}
+
+#wikileft, #wikiright {
+	color: black;
+	background: #e6c05c;
+}
+
+body.snug #wikibody,
+body.roomy #wikibody,
+body.trio #wikimid {
+	border-color: #e6c05c;
+}
+
+body.roomy {
+	color: white;
+	background: #553300;
+}
+*/
+
+/*------------------------------------------------*/
+/* links etc */
+a:link {
+	color: #760000;
+	background: transparent;
+}
+a:visited {
+	color: #333300;
+	background: transparent;
+}
+.sidebar .indent ul, .sidebar ul ul,
+.sidebar dl ul {
+        list-style-image: url(../images/bent_arrow.png);   
+}
+/*
+#menubar a, #menubar b {
+	border-color: #754c0e;
+	background: #e6c05c;
+}
+#menubar li {
+	border-color: #865d1f;
+}
+#menubar b.selflink,
+#menubar .current a {
+	background: #f2e6aa;
+	color: #333300;
+}
+*/
+.wikicmds a {
+	border-color: #754c0e;
+}
+.wikicmds .loginhover {
+	background: transparent;
+	color: white;
+}
+.wikicmds .login a {
+	border: none;
+	background: transparent;
+	color: #d69d15;
+}
+.wikicmds .login a:hover {
+	border: white 2px solid;
+	color: #d69d15;
+	background: #754c0e;
+}
+#breadcrumb b.selflink,
+#wikileft b.selflink,
+#wikiright b.selflink,
+#wikibody b.selflink {
+	color: #754c0e;
+}
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1, h2, h3, h4 {
+	font-family: galleria, FancyPants, BravoEngraved, serif;
+	font-weight: normal;
+	color: black;
+}

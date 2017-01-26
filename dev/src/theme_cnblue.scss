@@ -1,0 +1,23 @@
+/* Theme for Bonny: corner-blue */
+@import "functions";
+// -------------------------------------------------------------------
+// VARIABLES
+
+$body-bg: #c6d9ef;
+$main-bg: #bacaec;
+$main-border: navy;
+$menu-bg: #9999ff;
+$menu-border: #555588;
+
+/*------------------------------------------------*/
+@include bonny-light-1($body-bg, $main-bg, $main-border, "../images/corner_blue1.jpg", "../images/corner_blue1a.jpg", "fixed no-repeat");
+
+/*------------------------------------------------*/
+/* links etc */
+@include bonny-light-links-1($menu-bg, $menu-border);
+
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1, h2, h3, h4 {
+	font-family: merlin, hancock, black, barcool, "lucida calligraphy", Merced, sans-serif;
+}

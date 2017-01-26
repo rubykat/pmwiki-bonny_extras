@@ -1,0 +1,189 @@
+// Useful Sass functions
+@import "../bourbon/bourbon";
+
+// -------------------------------------------------------------------
+// FUNCTIONS
+//
+@function set-fg($colour) {
+    @if (lightness($colour) > 50) {
+        @if (saturation($colour) < 5 ) {
+            @return #111111; // Lighter background, return dark
+        } @else {
+            @return hsl(hue($colour), 100%, 10%);
+        }
+    } @else {
+        @if (saturation($colour) < 5 ) {
+            @return #eeeeee; // Darker background, return light
+        } @else {
+            @return hsl(hue($colour), 20%, 90%);
+        }
+    }
+}
+
+// Since the normal fg colour is the same hue as the bg
+// we want the link hue to be a bit different
+// so offset it by N degrees away from the red
+// Note that yellow and green appear lighter than other colours
+// so they need to be adjusted
+// And I don't like pink, so light red will have to be adjusted
+@function set-a-link-colour($colour,$adjust-hue) {
+    $newcolour: $colour;
+    @if (lightness($colour) > 50) {
+        @if (saturation($colour) < 5 ) {
+            @return hsl(270 + $adjust-hue, 100%, 20%);
+        } @else {
+            @if (hue($colour) < 180) {
+                $newcolour: hsl(hue($colour) + $adjust_hue, 100%, 20%);
+            } @else {
+                $newcolour: hsl(hue($colour) - $adjust_hue, 100%, 20%);
+            }
+            @if (hue($newcolour) >= 60 and hue($newcolour) <=120)
+            {
+                $newcolour: darken($newcolour, 10%);
+            }
+            @return $newcolour;
+        }
+    } @else {
+        @if (saturation($colour) < 5 ) {
+            @return hsl(240 + $adjust-hue, 30%, 90%);
+        } @else {
+            @if (hue($colour) < 180) {
+                $newcolour: hsl(hue($colour) + $adjust_hue, 80%, 80%);
+            } @else {
+                $newcolour: hsl(hue($colour) - $adjust_hue, 80%, 80%);
+            }
+            @if (hue($newcolour) >= 55 and hue($newcolour) <=120)
+            {
+                $newcolour: hsl(hue($newcolour), 90%, 70%);
+            }
+            @if (hue($newcolour) >= 330 or hue($newcolour) <= 30)
+            {
+                $newcolour: adjust-hue($newcolour, 120);
+            }
+            @return $newcolour;
+        }
+    }
+}
+
+@function set-link($colour) {
+    @return set-a-link-colour($colour, 30);
+}
+
+// with a "visited" link, we want it to move towards the red
+@function set-visited($colour) {
+    @return set-a-link-colour($colour, (-30));
+}
+
+// -------------------------------------------------------------------
+// MIXINS
+//
+
+@mixin bonny-light-1 ($body-background, $background, $border, $url1, $url2 : "", $bg-options : "") {
+    @include bonny-backdrop($body-background, $url1, $bg-options);
+
+    #wikititle,
+    #wikitext {
+        color: set-fg($background);
+        background: $background if($url2 == "", "", url($url2)) #{$bg-options};
+    }
+}
+
+@mixin bonny-light-links-1 ($background, $border) {
+    a:link {
+        color: set-link($background);
+        background: transparent;
+    }
+    a:visited {
+        color: set-visited($background);
+        background: transparent;
+    }
+    .sidebar .indent ul, .sidebar ul ul,
+    .sidebar dl ul {
+        list-style-image: url(../images/bent_arrow.png);   
+    }
+    #menubar a, #menubar b {
+        border-color: $border;
+        background: $background;
+    }
+    #menubar li {
+        border-color: $border;
+    }
+
+    .wikicmds a {
+        border-color: $border;
+    }
+    #breadcrumb b.selflink,
+    #wikileft b.selflink,
+    #wikiright b.selflink,
+    #wikibody b.selflink {
+        color: $border;
+    }
+    #menubar b.selflink,
+    #menubar .current a {
+        background: transparent;
+        color: set-fg($background);
+    }
+}
+
+@mixin bonny-backdrop ($background, $url : "", $bg-options : "") {
+
+    body,
+    body.roomy {
+        color: set-fg($background);
+        background: $background if($url == "", #{$url}, url($url)) #{$bg-options};
+    }
+    #wikileft, #wikibody, #wikiright {
+        background: transparent;
+    }
+    body.snug #wikimid,
+    body.roomy #wikimid {
+        border-color: transparent;
+    }
+}
+
+@mixin bonny-header ($background, $border, $url : "", $bg-options : "") {
+
+    #wikihead,
+    #wikifoot {
+        color: set-fg($background);
+        background: $background if($url == "", #{$url}, url($url)) #{$bg-options};
+        border-color: $border;
+    }
+}
+
+@mixin bonny-side ($background, $border, $url : "", $bg-options : "") {
+
+    #wikileft,
+    #wikiright {
+        color: set-fg($background);
+        background: $background if($url == "", #{$url}, url($url)) #{$bg-options};
+        border-color: $border;
+    }
+    #menubar a, #menubar b {
+        border-color: $border;
+        background: $background;
+    }
+    @if (lightness($background) > 50) {
+        #menubar b.selflink,
+        #menubar .current a {
+            background: lighten($background, 10%);
+            color: set-a-link-colour($background, 10);
+        }
+    } @else {
+        #menubar b.selflink,
+        #menubar .current a {
+            background: darken($background, 10%);
+            color: set-a-link-colour($background, 10);
+        }
+    }
+}
+
+@mixin bonny-content ($background, $border, $url : "", $bg-options : "") {
+
+    #wikititle,
+    #wikitext {
+        color: set-fg($background);
+        background: $background if($url == "", #{$url}, url($url)) #{$bg-options};
+        border-color: $border;
+    }
+}

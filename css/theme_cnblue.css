@@ -1,84 +1,71 @@
 /* Theme for Bonny: corner-blue */
-body {
-	color: #000033;
-	background: #c6d9ef url(../images/corner_blue1.jpg) fixed no-repeat;
+/*------------------------------------------------*/
+body,
+body.roomy {
+  color: #001833;
+  background: #c6d9ef url("../images/corner_blue1.jpg") fixed no-repeat;
 }
-#wikihead,
-#wikifoot {
-	background: transparent;
-	border-color: navy;
-}
+
 #wikileft, #wikibody, #wikiright {
-	background: transparent;
+  background: transparent;
 }
+
 body.snug #wikimid,
 body.roomy #wikimid {
-	border-color: transparent;
+  border-color: transparent;
 }
+
 #wikititle,
 #wikitext {
-	color: #000033;
-	background: #bacaec url(../images/corner_blue1a.jpg) fixed no-repeat;
-}
-body.snug #wikititle,
-body.snug #wikitext {
-    padding-top: 1px;
-    padding-bottom: 1px;
+  color: #001033;
+  background: #bacaec url("../images/corner_blue1a.jpg") fixed no-repeat;
 }
 
 /*------------------------------------------------*/
 /* links etc */
 a:link {
-	color: #000099;
-	background: transparent;
+  color: #003366;
+  background: transparent;
 }
+
 a:visited {
-	color: #990099;
-	background: transparent;
+  color: #330066;
+  background: transparent;
 }
+
 .sidebar .indent ul, .sidebar ul ul,
 .sidebar dl ul {
-        list-style-image: url(../images/bent_arrow.png);   
+  list-style-image: url(../images/bent_arrow.png);
 }
+
 #menubar a, #menubar b {
-	border-color: navy;
-	background: #9999ff;
+  border-color: #555588;
+  background: #9999ff;
 }
+
 #menubar li {
-	border-color: #555588;
+  border-color: #555588;
 }
 
 .wikicmds a {
-	border-color: navy;
+  border-color: #555588;
 }
-.wikicmds .loginhover {
-	background: transparent;
-	color: white;
-}
-.wikicmds .login a {
-	border: none;
-	background: transparent;
-	color: #c6d9ef;
-}
-.wikicmds .login a:hover {
-	border: white 2px solid;
-	color: #9999ff;
-	background: navy;
-}
+
 #breadcrumb b.selflink,
 #wikileft b.selflink,
 #wikiright b.selflink,
 #wikibody b.selflink {
-	color: navy;
+  color: #555588;
 }
+
 #menubar b.selflink,
 #menubar .current a {
-	background: transparent;
-	color: #000099;
+  background: transparent;
+  color: #000033;
 }
 
 /* ------------------------------------------------------------------ */
 /* Fonts */
 h1, h2, h3, h4 {
-	font-family: merlin, hancock, black, barcool, "lucida calligraphy", Merced, sans-serif;
+  font-family: merlin, hancock, black, barcool, "lucida calligraphy", Merced, sans-serif;
 }

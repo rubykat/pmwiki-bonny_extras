@@ -1,0 +1,125 @@
+/* Theme for Bonny: jungle */
+@import "functions";
+#wikifoot {
+	color: black;
+	background: url(../images/gslant.jpg) #669933;
+	border-color: #552200;
+}
+
+#wikihead {
+	color: white;
+	background: url(../images/wood2.jpg) #a56623;
+	border-color: #552200;
+}
+
+body.roomy #wikititle {
+	color: black;
+	background: url(../images/gslant.jpg) #669933;
+}
+
+body,
+body.snug #wikititle,
+#wikitext {
+	color: black;
+	background: #7db347;
+}
+
+#wikileft, #wikiright {
+	color: white;
+	background: #552200;
+}
+
+body.snug #wikibody,
+body.roomy #wikibody,
+body.trio #wikimid {
+	border-color: #552200;
+}
+
+body.roomy {
+	color: white;
+	background: #005500;
+}
+
+/*------------------------------------------------*/
+/* links etc */
+a:link {
+	color: #660000;
+	background: transparent;
+}
+a:visited {
+	color: #663300;
+	background: transparent;
+}
+#wikileft a:link,
+#wikiright a:link,
+#wikihead a:link {
+	color: #ffff44;
+}
+#wikileft a:visited,
+#wikiright a:visited,
+#wikihead a:visited {
+	color: #ffcc33;
+}
+
+.sidebar .indent ul, .sidebar ul ul,
+.sidebar dl ul {
+        list-style-image: url(../images/bent_arrow2.png);   
+}
+#menubar a, #menubar b {
+	border-color: #005500;
+	background: #552200;
+}
+#menubar li {
+	border-color: #664400;
+}
+#menubar b.selflink,
+#menubar .current a {
+	color: #552200;
+	background: #669933;
+}
+.wikicmds a {
+	border-color: #552200;
+}
+.wikicmds .loginhover {
+	background: transparent;
+	color: white;
+}
+#wikihead .wikicmds .login a {
+	border: none;
+	background: transparent;
+	color: #a56623;
+}
+#wikifoot .wikicmds .login a {
+	border: none;
+	background: transparent;
+	color: #669933;
+}
+#wikihead .wikicmds .login a:hover {
+	border: white 2px solid;
+	color: #99ff99;
+	background: #552200;
+}
+#wikifoot .wikicmds .login a:hover {
+	border: white 2px solid;
+	color: #99ff99;
+	background: #552200;
+}
+#breadcrumb b.selflink,
+#wikileft b.selflink,
+#wikiright b.selflink {
+	color: #ffaa99;
+}
+
+#wikibody b.selflink {
+	color: #552200;
+}
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1 {
+	font-family: Hurry Up, kids, verdana, helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+h2, h3, h4 {
+	font-family: mead, sloppy, kids, verdana, helvetica, arial, sans-serif;
+	font-weight: normal;
+}

@@ -1,0 +1,24 @@
+/* Theme for Bonny: cloud */
+@import "functions";
+// -------------------------------------------------------------------
+// VARIABLES
+
+$body-bg: #ccccff;
+$main-bg: #ccccff;
+$main-border: navy;
+
+$menu-bg: #9999ff;
+$menu-border: #555588;
+
+/*------------------------------------------------*/
+@include bonny-light-1($body-bg, $main-bg, $main-border, "../images/cloudtile1.jpg", "../images/cloudtile2.jpg", "fixed");
+
+/*------------------------------------------------*/
+/* links etc */
+@include bonny-light-links-1($menu-bg, $menu-border);
+
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1, h2, h3, h4 {
+	font-family: merlin, hancock, black, barcool, "lucida calligraphy", Merced, sans-serif;
+}

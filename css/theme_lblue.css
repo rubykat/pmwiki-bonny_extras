@@ -1,90 +1,101 @@
 /* Theme for Bonny: lblue */
 #wikihead,
 #wikifoot {
-	color: #000033;
-	background: url(../images/lblue2.jpg) #c3c2f6;
-	border-color: navy;
+  color: #000033;
+  background: url(../images/lblue2.jpg) #c3c2f6;
+  border-color: navy;
 }
 
 body.roomy #wikititle {
-	color: #000033;
-	background: url(../images/lblue3.jpg) #c3c2f6;
+  color: #000033;
+  background: url(../images/lblue3.jpg) #c3c2f6;
 }
 
 body,
 body.snug #wikititle,
 #wikitext {
-	color: #000033;
-	background: #ccccff;
+  color: #000033;
+  background: #ccccff;
 }
 
 #wikileft, #wikiright {
-	color: #000033;
-	background: #b1b9f2;
+  color: #000033;
+  background: #b1b9f2;
 }
 
 body.snug #wikimid,
 body.roomy #wikimid {
-	border-color: #b1b9f2;
+  border-color: #b1b9f2;
 }
 
 body.roomy {
-	color: white;
-	background: navy url(../images/lblue5.jpg);
+  color: white;
+  background: navy url(../images/lblue5.jpg);
 }
 
 /*------------------------------------------------*/
 /* links etc */
 a:link {
-	color: #000099;
-	background: transparent;
+  color: #000099;
+  background: transparent;
 }
+
 a:visited {
-	color: #990099;
-	background: transparent;
+  color: #990099;
+  background: transparent;
 }
+
 .sidebar .indent ul, .sidebar ul ul,
 .sidebar dl ul {
-        list-style-image: url(../images/bent_arrow.png);   
+  list-style-image: url(../images/bent_arrow.png);
 }
+
 #menubar a, #menubar b {
-	border-color: navy;
-	background: #b1b9f2;
+  border-color: navy;
+  background: #b1b9f2;
 }
+
 #menubar li {
-	border-color: #555588;
+  border-color: #555588;
 }
+
 #menubar b.selflink,
 #menubar .current a {
-	background: #ccccff;
-	color: #000099;
+  background: #ccccff;
+  color: #000099;
 }
+
 .wikicmds a, div.wikicmds b.selflink {
-	border-color: navy;
+  border-color: navy;
 }
+
 .wikicmds .loginhover {
-	background: transparent;
-	color: white;
+  background: transparent;
+  color: white;
 }
+
 .wikicmds .login a {
-	border: none;
-	background: transparent;
-	color: #c3c2f6;
+  border: none;
+  background: transparent;
+  color: #c3c2f6;
 }
+
 .wikicmds .login a:hover {
-	border: white 2px solid;
-	color: #c3c2f6;
-	background: navy;
+  border: white 2px solid;
+  color: #c3c2f6;
+  background: navy;
 }
+
 #breadcrumb b.selflink,
 #wikileft b.selflink,
 #wikiright b.selflink,
 #wikibody b.selflink {
-	color: navy;
+  color: navy;
 }
+
 /* ------------------------------------------------------------------ */
 /* Fonts */
 h1, h2, h3, h4 {
-	font-family: merlin, hancock, black, barcool, "lucida calligraphy", Merced, sans-serif;
-	font-weight: normal;
+  font-family: merlin, hancock, black, barcool, "lucida calligraphy", Merced, sans-serif;
+  font-weight: normal;
 }

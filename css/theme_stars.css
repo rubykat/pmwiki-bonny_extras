@@ -1,93 +1,104 @@
-/* Theme for Bonny: lblue */
+/* Theme for Bonny: stars */
 #wikihead,
 #wikifoot {
-	color: white;
-	background: url(../images/stars.png) #222222;
-	border-color: #005500;
+  color: white;
+  background: url(../images/stars.png) #222222;
+  border-color: #005500;
 }
 
 body.roomy #wikititle {
-	color: white;
-	background: #222222;
-	border-color: #005500;
+  color: white;
+  background: #222222;
+  border-color: #005500;
 }
 
 body,
 body.snug #wikititle,
 #wikitext {
-	color: white;
-	background: black;
+  color: white;
+  background: black;
 }
 
 #wikileft, #wikiright {
-	color: white;
-	background: #000033;
+  color: white;
+  background: #000033;
 }
 
 body.snug #wikibody,
 body.roomy #wikibody,
 body.trio #wikimid {
-	border-color: #000033;
+  border-color: #000033;
 }
 
 body.roomy {
-	color: white;
-	background: #eeeeee url(../images/silver3.jpg);
+  color: white;
+  background: #eeeeee url(../images/silver3.jpg);
 }
 
 /*------------------------------------------------*/
 /* links etc */
 a:link {
-	color: #ccccff;
-	background: transparent;
+  color: #ccccff;
+  background: transparent;
 }
+
 a:visited {
-	color: #ffccff;
-	background: transparent;
+  color: #ffccff;
+  background: transparent;
 }
+
 .sidebar .indent ul, .sidebar ul ul,
 .sidebar dl ul {
-        list-style-image: url(../images/bent_arrow2.png);   
+  list-style-image: url(../images/bent_arrow2.png);
 }
+
 #menubar a, #menubar b {
-	border-color: grey;
-	color: white;
-	background: #000033;
+  border-color: grey;
+  color: white;
+  background: #000033;
 }
+
 #menubar li {
-	border-color: grey;
+  border-color: grey;
 }
+
 #menubar b.selflink,
 #menubar .current a {
-	color: white;
-	background: black;
+  color: white;
+  background: black;
 }
+
 .wikicmds a {
-	border-color: grey;
+  border-color: grey;
 }
+
 .wikicmds .loginhover {
-	background: transparent;
-	color: white;
+  background: transparent;
+  color: white;
 }
+
 .wikicmds .login a {
-	border: none;
-	background: transparent;
-	color: #333333;
+  border: none;
+  background: transparent;
+  color: #333333;
 }
+
 .wikicmds .login a:hover {
-	border: white 2px solid;
-	color: #333333;
-	background: #bbbbff;
+  border: white 2px solid;
+  color: #333333;
+  background: #bbbbff;
 }
+
 #breadcrumb b.selflink,
 #wikileft b.selflink,
 #wikiright b.selflink,
 #wikibody b.selflink {
-	color: #eeeeee;
+  color: #eeeeee;
 }
+
 /* ------------------------------------------------------------------ */
 /* Fonts */
 h1, h2, h3, h4 {
-	font-family: "Flipside BRK", "Metal Lord", Fantazian, Ethnocentric, ESP, Scott, Illusion, Slant, verdana, arial, helvetica, sans-serif;
-	font-weight: normal;
+  font-family: "Flipside BRK", "Metal Lord", Fantazian, Ethnocentric, ESP, Scott, Illusion, Slant, verdana, arial, helvetica, sans-serif;
+  font-weight: normal;
 }

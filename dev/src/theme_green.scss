@@ -1,0 +1,93 @@
+/* Theme for Bonny: green */
+@import "functions";
+#wikihead,
+#wikifoot {
+	color: #003300;
+	background: url(../images/green1.jpg) #33aa33;
+	border-color: #005500;
+}
+
+body.roomy #wikititle {
+	color: #003300;
+	background: url(../images/green1.jpg) #33aa33;
+}
+
+body,
+body.snug #wikititle,
+#wikitext {
+	color: #003300;
+	background: #88dd88;
+}
+
+#wikileft, #wikiright {
+	color: #003300;
+	background: #55cc55;
+}
+
+body.snug #wikibody,
+body.roomy #wikibody,
+body.trio #wikimid {
+	border-color: #55cc55;
+}
+
+body.roomy {
+	color: white;
+	background: #005500 url(../images/dkgreen1.jpg);
+}
+
+/*------------------------------------------------*/
+/* links etc */
+a:link {
+	color: #003399;
+	background: transparent;
+}
+a:visited {
+	color: #003333;
+	background: transparent;
+}
+.sidebar .indent ul, .sidebar ul ul,
+.sidebar dl ul {
+        list-style-image: url(../images/bent_arrow.png);   
+}
+#menubar a, #menubar b {
+	border-color: #005500;
+	background: #55cc55;
+}
+#menubar li {
+	border-color: #116611;
+}
+#menubar b.selflink,
+#menubar .current a {
+	background: #88dd88;
+	color: #003399;
+}
+.wikicmds a {
+	border-color: #005500;
+}
+.wikicmds .loginhover {
+	background: transparent;
+	color: white;
+}
+.wikicmds .login a {
+	border: none;
+	background: transparent;
+	color: #33aa33;
+}
+.wikicmds .login a:hover {
+	border: white 2px solid;
+	color: #33aa33;
+	background: #005500;
+}
+#breadcrumb b.selflink,
+#wikileft b.selflink,
+#wikiright b.selflink,
+#wikibody b.selflink {
+	color: #005500;
+}
+/* ------------------------------------------------------------------ */
+/* Fonts */
+h1, h2, h3, h4 {
+	font-family: Merced, "Lucida Calligraphy", "Black", ZurichCalligraphic, verdana, helvetica, arial, sans-serif;
+	font-weight: normal;
+	color: black;
+}
